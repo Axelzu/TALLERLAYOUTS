@@ -3,14 +3,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TALLERLAYOUTS.GridPage"
              Title="GridPage">
-    <Grid RowDefinitions="*,*" ColumnDefinitions="*,*">
-        <BoxView BackgroundColor="Red" Grid.Row="0" Grid.Column="0"/>
+    <Grid RowDefinitions="*,*" ColumnDefinitions="*,*"
+          VerticalOptions="FillAndExpand"
+          HorizontalOptions="FillAndExpand">
+
+        <BoxView BackgroundColor="Yellow" Grid.Row="0" Grid.Column="0"/>
         <BoxView BackgroundColor="Blue" Grid.Row="0" Grid.Column="1"/>
-        <BoxView BackgroundColor="Green" Grid.Row="1" Grid.Column="0"/>
-        <StackLayout Grid.Row="1" Grid.Column="1">
-            <BoxView BackgroundColor="Yellow" HeightRequest="100"/>
+        <BoxView BackgroundColor="Red" Grid.Row="1" Grid.Column="0"/>
+
+        <Grid Grid.Row="1" Grid.Column="1"
+              VerticalOptions="FillAndExpand"
+              HorizontalOptions="FillAndExpand">
+            <BoxView BackgroundColor="Brown"
+                     VerticalOptions="FillAndExpand"
+                     HorizontalOptions="FillAndExpand"/>
             <Button Text="Ir a StackLayout"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
                     Clicked="OnGoToStackPageClicked"/>
-        </StackLayout>
+        </Grid>
+
     </Grid>
 </ContentPage>
