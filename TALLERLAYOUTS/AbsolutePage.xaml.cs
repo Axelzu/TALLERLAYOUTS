@@ -1,9 +1,4 @@
-namespace TALLERLAYOUTS;
-
-public partial class AbsolutePage : ContentPage
+private async void OnGoToGridPageClicked(object sender, EventArgs e)
 {
-	public AbsolutePage()
-	{
-		InitializeComponent();
-	}
+    await Navigation.PushAsync(new GridPage());
 }

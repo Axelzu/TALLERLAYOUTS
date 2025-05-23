@@ -1,12 +1,16 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TALLERLAYOUTS.AbsolutePage"
-             Title="AbsolutePage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             x:Class="MyApp.AbsolutePage"
+             Title="Absolute Page">
+    <AbsoluteLayout>
+        <!-- Ícono arriba fijo -->
+        <Label Text="🔷" FontSize="40"
+               AbsoluteLayout.LayoutBounds="0,0,AutoSize,AutoSize"
+               AbsoluteLayout.LayoutFlags="None"/>
+
+        <!-- Botón abajo derecha -->
+        <Button Text="Volver a GridLayout"
+                Clicked="OnGoToGridPageClicked"
+                AbsoluteLayout.LayoutBounds="1,1,AutoSize,AutoSize"
+                AbsoluteLayout.LayoutFlags="PositionProportional"/>
+    </AbsoluteLayout>
 </ContentPage>
