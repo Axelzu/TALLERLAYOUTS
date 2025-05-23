@@ -3,10 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TALLERLAYOUTS.StackPage"
              Title="StackPage">
-    <StackLayout Padding="20" Spacing="15">
-        <Label Text="Nombre: Juan" FontSize="Large"/>
-        <Label Text="Apellido Paterno: Pérez" FontSize="Medium"/>
-        <Label Text="Apellido Materno: García" FontSize="Small"/>
+    <StackLayout Padding="20" Spacing="15"
+                 VerticalOptions="Center"
+                 HorizontalOptions="Center">
+        <Label Text="Alexander Cahueñas" FontSize="Large" HorizontalOptions="Center"/>
+        <Label Text="Alexander Cahueñas" FontSize="Medium" HorizontalOptions="Center"/>
+        <Label Text="Alexander Cahueñas" FontSize="Small" HorizontalOptions="Center"/>
         <Button Text="Ir a FlexLayout" Clicked="OnGoToFlexPageClicked"/>
     </StackLayout>
 </ContentPage>
