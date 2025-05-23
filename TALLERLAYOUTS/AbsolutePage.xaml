@@ -5,23 +5,23 @@
              Title="AbsolutePage">
     <AbsoluteLayout>
 
-        <!-- Contenido desplazable -->
+        
         <ScrollView AbsoluteLayout.LayoutBounds="0,0,1,1"
                     AbsoluteLayout.LayoutFlags="All">
             <VerticalStackLayout Padding="20" Spacing="20">
-                <!-- Espaciador para que no tape el header -->
+              
                 <BoxView HeightRequest="120" />
 
-                <!-- Contenido adicional que se puede hacer scroll -->
+                
                 <Label Text="La programación, en informática, es el proceso de crear instrucciones o código que una computadora puede entender y ejecutar para realizar tareas específicas" FontSize="20"/>
                 <Label Text="Detrás de todos los programas informáticos que conocemos y usamos de manera cotidiana para facilitarnos diversas actividades de nuestro día con día, existe todo un proceso para poderlos crear. Este proceso es conocido como programación, conozcamos un poco más sobre lo que conlleva este proceso." FontSize="20"/>
                 <Label Text="La programación se guía por una serie de normas y un conjunto de órdenes, instrucciones y expresiones que tienden a ser semejantes a una lengua natural acotada. Por lo cual recibe el nombre de lenguaje de programación. Y así como en los idiomas también en la informática existen diversos lenguajes de programación." FontSize="20"/>
-                <!-- Puedes agregar más contenido aquí -->
+                <Image Source="dotnet_bot.png"
+                     WidthRequest="400"
+                    HeightRequest="200"/>
             </VerticalStackLayout>
         </ScrollView>
-        <Image Source="descarga-_1_.png"
-            WidthRequest="60"
-            HeightRequest="60"/>
+        
             
        
          <!-- Botón fijo abajo -->
