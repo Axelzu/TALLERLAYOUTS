@@ -1,16 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             x:Class="MyApp.AbsolutePage"
-             Title="Absolute Page">
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TALLERLAYOUTS.AbsolutePage"
+             Title="AbsolutePage">
     <AbsoluteLayout>
-        <!-- Ícono arriba fijo -->
         <Label Text="🔷" FontSize="40"
-               AbsoluteLayout.LayoutBounds="0,0,AutoSize,AutoSize"
-               AbsoluteLayout.LayoutFlags="None"/>
-
-        <!-- Botón abajo derecha -->
+           AbsoluteLayout.LayoutBounds="0,0,AutoSize,AutoSize"
+           AbsoluteLayout.LayoutFlags="None"/>
         <Button Text="Volver a GridLayout"
-                Clicked="OnGoToGridPageClicked"
-                AbsoluteLayout.LayoutBounds="1,1,AutoSize,AutoSize"
-                AbsoluteLayout.LayoutFlags="PositionProportional"/>
+            Clicked="OnGoToGridPageClicked"
+            AbsoluteLayout.LayoutBounds="1,1,AutoSize,AutoSize"
+            AbsoluteLayout.LayoutFlags="PositionProportional"/>
     </AbsoluteLayout>
 </ContentPage>

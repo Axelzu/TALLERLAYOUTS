@@ -1,6 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             x:Class="MyApp.StackPage"
-             Title="Stack Page">
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TALLERLAYOUTS.StackPage"
+             Title="StackPage">
     <StackLayout Padding="20" Spacing="15">
         <Label Text="Nombre: Juan" FontSize="Large"/>
         <Label Text="Apellido Paterno: Pérez" FontSize="Medium"/>

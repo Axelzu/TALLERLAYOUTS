@@ -1,20 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             x:Class="MyApp.GridPage"
-             Title="Grid Page">
-    <Grid RowDefinitions="*,*" ColumnDefinitions="*,*">
-        <BoxView BackgroundColor="Red" Grid.Row="0" Grid.Column="0"/>
-        <BoxView BackgroundColor="Blue" Grid.Row="0" Grid.Column="1"/>
-        <BoxView BackgroundColor="Green" Grid.Row="1" Grid.Column="0"/>
-        <StackLayout Grid.Row="1" Grid.Column="1">
-            <BoxView BackgroundColor="Yellow" HeightRequest="100"/>
-            <Button Text="Ir a StackLayout"
-                    Clicked="OnGoToStackPageClicked"/>
-        </StackLayout>
-    </Grid>
-</ContentPage>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             x:Class="MyApp.GridPage"
-             Title="Grid Page">
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TALLERLAYOUTS.GridPage"
+             Title="GridPage">
     <Grid RowDefinitions="*,*" ColumnDefinitions="*,*">
         <BoxView BackgroundColor="Red" Grid.Row="0" Grid.Column="0"/>
         <BoxView BackgroundColor="Blue" Grid.Row="0" Grid.Column="1"/>

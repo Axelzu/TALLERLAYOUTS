@@ -1,6 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             x:Class="MyApp.FlexPage"
-             Title="Flex Page">
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TALLERLAYOUTS.FlexPage"
+             Title="FlexPage">
     <StackLayout>
         <FlexLayout Direction="Row" Wrap="Wrap" JustifyContent="Start">
             <Button Text="Botón 1" WidthRequest="100" HeightRequest="50"/>
