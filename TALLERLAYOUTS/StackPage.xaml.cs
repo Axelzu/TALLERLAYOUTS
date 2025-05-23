@@ -1,4 +1,10 @@
-private async void OnGoToFlexPageClicked(object sender, EventArgs e)
+namespace TALLERLAYOUTS;
+
+public partial class StackPage : ContentPage
 {
-    await Navigation.PushAsync(new FlexPage());
+    private async void OnGoToFlexPageClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new FlexPage());
+    }
+
 }

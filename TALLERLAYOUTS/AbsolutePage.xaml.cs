@@ -1,4 +1,10 @@
-private async void OnGoToGridPageClicked(object sender, EventArgs e)
+namespace TALLERLAYOUTS;
+
+public partial class AbsolutePage : ContentPage
 {
-    await Navigation.PushAsync(new GridPage());
+    private async void OnGoToGridPageClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new GridPage());
+    }
+
 }

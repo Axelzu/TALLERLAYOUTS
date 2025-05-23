@@ -1,4 +1,10 @@
-private async void OnGoToAbsolutePageClicked(object sender, EventArgs e)
+namespace TALLERLAYOUTS;
+
+public partial class FlexPage : ContentPage
 {
-    await Navigation.PushAsync(new AbsolutePage());
+    private async void OnGoToAbsolutePageClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new AbsolutePage());
+    }
+
 }

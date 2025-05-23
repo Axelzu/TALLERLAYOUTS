@@ -1,6 +1,12 @@
-using TALLERLAYOUTS;
+using Microsoft.Maui.Controls;
 
-private async void OnGoToStackPageClicked(object sender, EventArgs e)
+namespace TALLERLAYOUTS;
+
+public partial class GridPage : ContentPage
 {
-    await Navigation.PushAsync(new StackPage());
+    private async void OnGoToStackPageClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new StackPage());
+    }
+
 }
