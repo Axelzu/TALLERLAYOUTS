@@ -1,9 +1,4 @@
-namespace TALLERLAYOUTS;
-
-public partial class StackPage : ContentPage
+private async void OnGoToFlexPageClicked(object sender, EventArgs e)
 {
-	public StackPage()
-	{
-		InitializeComponent();
-	}
+    await Navigation.PushAsync(new FlexPage());
 }

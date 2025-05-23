@@ -1,9 +1,6 @@
-namespace TALLERLAYOUTS;
+using TALLERLAYOUTS;
 
-public partial class GridPage : ContentPage
+private async void OnGoToStackPageClicked(object sender, EventArgs e)
 {
-	public GridPage()
-	{
-		InitializeComponent();
-	}
+    await Navigation.PushAsync(new StackPage());
 }
